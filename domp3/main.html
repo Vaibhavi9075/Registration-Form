@@ -29,20 +29,22 @@
          <input id="Address" type ="Address" name="Address" class="form-control mb-3" placeholder="Enter your Address" required>
 
          <div class="form-btn">
-         <button type="submit" class="btn btn-dark">Back</button>
+         <button onclick="goBack()" type="button" class="btn btn-dark">Back</button>
          <div>
-            <button onClick="addData" type="submit" class="btn btn-danger">Add</button>
-            <button type="submit" class="btn btn-dark">Update</button>
+            <button onclick="addData()" type="button" class="btn btn-danger">Add</button>
+            <!-- <button type="submit" class="btn btn-dark">Update</button> -->
          </div>
          </div>
          <br><br>
          <div class="User-Container">
               <div class="userDetails">User Details</div>
+
+               <div id="dataList"></div>
          </div>
          </form>
          </div>
          
     </div>
-
+<script src = "main.js"></script>
 </body>
 </html>
